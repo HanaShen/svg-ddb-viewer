@@ -81,7 +81,7 @@ export default function App(){
             <Divider />
             <Viewer svgData={svg.svg} />
             <Divider />
-            <SVGUploadForm />
+            <SVGUploadForm updateSVG={updateSVG} />
         </div>
     );
 }
