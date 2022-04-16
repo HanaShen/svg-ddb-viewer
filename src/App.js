@@ -73,9 +73,13 @@ export default function App(){
                 textAlign: "center",
             }}
         >
-            <TitleSegment />
+            <TitleSegment
+                svgTitle={svg.title}
+                svgNameList={svgNameList}
+                changeCurrentSVG={changeCurrentSVG}
+            />
             <Divider />
-            <Viewer svgData={svg.svg}/>
+            <Viewer svgData={svg.svg} />
             <Divider />
             <SVGUploadForm />
         </div>
